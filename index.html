@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SATYAM | Premium Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="ambient-bg">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+    </div>
+    
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">SATYAM</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Explore Worlds of <span class="typewriter" id="typewriter"></span></h1>
+    </section>
+
+    <div class="filter-container">
+        <button class="filter-btn active" onclick="filterType('all')">Show All</button>
+        <button class="filter-btn" onclick="filterType('story')">Stories 📚</button>
+        <button class="filter-btn" onclick="filterType('photo')">Photography 📸</button>
+    </div>
+
+    <main class="main-container">
+        <div class="stories-grid" id="gridDisplay">
+            </div>
+    </main>
+
+    <div class="modal-overlay" id="globalModal">
+        <div class="modal-box" id="modalBox">
+            <div class="progress-bar-container"><div class="progress-bar" id="readingBar"></div></div>
+            <div class="modal-header">
+                <div>
+                    <span class="story-tag" id="modalTag">Tag</span>
+                    <h2 id="modalTitle" style="font-weight:800; margin-top:0.4rem; font-size:1.8rem;">Title</h2>
+                </div>
+                <button class="close-btn" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="modal-body" id="modalBody" onscroll="updateProgress(this)">
+                </div>
+        </div>
+    </div>
+
+    <script src="First.js"></script>
+</body>
+</html>
+
+
+<body>
+    <div class="instagram-wrapper">
+        <a href="https://www.instagram.com/e_satyam.18?igsh=b2FtaHF4YXl5N2Ju" target="_blank" class="instagram-btn">
+            <i class="fab fa-instagram"></i> @e_satyam.18
+        </a>
+    </div>
+
+    <header class="hero-section">
+        <h1>Satyam Mahananda</h1>
+        <div id="typewriter"></div>
+    </header>
+...
+  
